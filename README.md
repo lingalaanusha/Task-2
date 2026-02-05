@@ -157,7 +157,7 @@ The project answers 10 key business questions using SQL :
    
 ```
 
-## 📱 Dashboard & KPIs (INR)
+## 📱 Dashboard & KPIs
 
 ### Dashboard KPIs (Indian Rupees):
 1. **Monthly Sales Growth** (%) - Target: >10%
@@ -168,16 +168,15 @@ The project answers 10 key business questions using SQL :
 6. **Regional Sales Distribution** - West: 32% (₹6.08 Crores)
 7. **Shipping Efficiency** - Same Day: 95% on-time delivery
 
-### Dashboard Components (INR):
-- **Executive Summary**: Key metrics in Indian Rupees
-- **Sales Trends**: Monthly and quarterly trends in ₹
-- **Category Performance**: Sales and margin by category (₹)
+### Dashboard Components:
+- **Executive Summary**: Key metrics 
+- **Sales Trends**: Monthly and quarterly trends 
+- **Category Performance**: Sales and margin 
 - **Customer Analysis**: Segment performance and retention
-- **Regional Heatmap**: Geographical performance in INR
-- **Top Performers**: Best products and customers (₹)
-- **Currency Note**: Exchange rate and conversion details
+- **Regional Heatmap**: Geographical performance 
+- **Top Performers**: Best products and customers
 
-## 💡 Business Recommendations (Indian Market Context)
+## 💡 Business Recommendations 
 
 ### Immediate Actions:
 1. **Focus on Technology**: Increase inventory and marketing for Technology category - highest ROI at 16.8% margin
@@ -185,7 +184,7 @@ The project answers 10 key business questions using SQL :
 3. **Target Corporate Clients**: Develop B2B sales strategy with premium offerings targeting corporate segment
 
 ### Medium-term Strategies:
-4. **Customer Loyalty**: Implement rewards program for repeat buyers with ₹ value benefits
+4. **Customer Loyalty**: Implement rewards program for repeat buyers with benefits
 5. **Regional Expansion**: Invest in West region operations and marketing (highest sales at ₹6.08 Crores)
 6. **Shipping Optimization**: Improve Standard Class delivery times while maintaining cost efficiency
 
@@ -210,7 +209,6 @@ python notebooks/superstore_eda.py
 python sql/business_queries_superstore.py
 
 # Output: sql_query_results.xlsx and INR visualizations
-```
 
 ### Step 3: Generate Dashboard
 ```bash
@@ -227,42 +225,10 @@ open dashboard/index.html
 5. **Dashboard**: `dashboard/index.html` (Static dashboard)
 
 ### Console Output Includes:
-- Descriptive statistics summary in ₹
-- Key business metrics in Indian Rupees
-- Top products and customers with ₹ values
-- Insights and recommendations for Indian market
-
-## 🔧 Customization Options
-
-### Adjust Exchange Rate:
-```python
-# In currency_config.json
-{
-    "exchange_rate": 83.0,
-    "source_currency": "USD",
-    "target_currency": "INR",
-    "last_updated": "2024-12-01",
-    "format_options": {
-        "use_lakhs_crores": true,
-        "decimal_places": 2,
-        "currency_symbol": "₹"
-    }
-}
-```
-
-### Custom Number Formatting:
-```python
-def format_indian_currency(value):
-    """Format number in Indian lakhs/crores notation"""
-    if value >= 10000000:  # Crores
-        return f"₹{value/10000000:.2f} Cr"
-    elif value >= 100000:  # Lakhs
-        return f"₹{value/100000:.2f} L"
-    elif value >= 1000:  # Thousands
-        return f"₹{value/1000:.1f}k"
-    else:
-        return f"₹{int(value):,}"
-```
+- Descriptive statistics 
+- Key business metrics 
+- Top products and customers 
+- Insights and recommendations 
 
 ## 📚 Learning Outcomes 
 
