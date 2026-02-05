@@ -1,4 +1,4 @@
-# 📊 Superstore Sales Analysis - EDA & Business Intelligence
+# 📊 Superstore Sales Analysis - EDA & Business Intelligence (Indian Rupees Version)
 
 ## 🎯 Project Overview
 A comprehensive business intelligence project analyzing the Superstore dataset to uncover actionable insights, patterns, and trends. This project demonstrates proficiency in SQL, data visualization, and business analysis through exploratory data analysis (EDA) and dashboard creation.
@@ -6,21 +6,20 @@ A comprehensive business intelligence project analyzing the Superstore dataset t
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
 [![Pandas](https://img.shields.io/badge/Pandas-1.5%2B-green)](https://pandas.pydata.org)
 [![SQL](https://img.shields.io/badge/SQL-SQLite%2FMySQL-yellow)](https://sqlite.org)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
 ## 📁 Project Structure
 ```
-superstore-analysis/
+superstore-analysis-inr/
 ├── data/                                # Data files
 │   ├── superstore.csv                   # Original dataset
-│   └── processed_superstore.csv         # Cleaned and processed data
+│   └── processed_superstore.csv          # Cleaned 
 ├── notebooks/                           # Jupyter notebooks
-│   └── superstore_eda.ipynb             # Complete EDA analysis
+│   ├── superstore_eda.ipynb         # Complete EDA analysis 
 ├── sql/                                 # SQL queries and scripts
-│   └── business_queries_superstore.py   # Python script to run SQL queries
+│   └── business_queries_superstore.py   # SQL queries
 ├── visualizations/                      # Generated charts and plots
 │   ├── categorical_distribution.png
-│   ├── sales_profit_distribution.png
+│   ├── sales_profit_distribution_inr.png
 │   ├── time_series_analysis.png
 │   ├── correlation_matrix.png
 │   ├── scatter_plots.png
@@ -32,10 +31,10 @@ superstore-analysis/
 │   ├── category_sales_pie.png
 │   └── segment_performance.png
 ├── dashboard/                           # Dashboard materials
-│   └── index.html                       # Static dashboard 
+│   ├── index.html                   # Static dashboard 
 ├── output/                              # Analysis outputs
-│   ├── sql_query_results.xlsx           # All SQL query results
-│   └── superstore.db                    # SQLite database
+│   ├── sql_query_results.xlsx       # All SQL query results 
+│   ├── superstore.db                    # SQLite database
 ├── requirements.txt                     # Python dependencies
 └── README.md                            # This file
 ```
@@ -48,18 +47,18 @@ superstore-analysis/
 - **Time Period**: 2014-2017
 - **Size**: ~1.4 MB
 
-### Key Features:
+### Key Features (INR Converted):
 - **Order Details**: Order ID, Order Date, Ship Date, Ship Mode
 - **Customer Information**: Customer ID, Customer Name, Segment, Country, Region, State, City, Postal Code
 - **Product Information**: Product ID, Category, Sub-Category, Product Name
-- **Sales Metrics**: Sales, Quantity, Discount, Profit
+- **Sales Metrics**: Sales (₹), Quantity, Discount, Profit (₹)
 
 ## 🎯 Objectives
-1. Perform descriptive statistics and univariate analysis
-2. Answer key business questions using SQL
+1. Perform descriptive statistics and univariate analysis 
+2. Answer key business questions using SQL 
 3. Conduct multivariate analysis and correlation studies
-4. Create static dashboard mock-up with key KPIs
-5. Generate actionable business insights and recommendations
+4. Create static dashboard mock-up with key KPIs 
+5. Generate actionable business insights and recommendations for Indian market
 
 ## 🛠️ Technologies Used
 - **Programming**: Python 3.8+
@@ -77,12 +76,12 @@ Python 3.8 or higher
 pip (Python package manager)
 ```
 
-### Installation & Setup
+### Installation & Setup 
 
-#### Method 1: Automatic Setup (Recommended)
+#### Method 1: Automatic Setup 
 ```bash
 # Clone or download the project files
-# Run the setup script
+# Run the setup script 
 python setup_superstore.py
 ```
 
@@ -91,227 +90,209 @@ python setup_superstore.py
 # 1. Create project directory
 mkdir superstore-analysis && cd superstore-analysis
 
-# 2. Install dependencies
-pip install pandas numpy matplotlib seaborn openpyxl
+# 2. Install dependencies 
+pip install pandas numpy matplotlib seaborn openpyxl forex-python 
 
 # 3. Download the dataset
 curl -o superstore.csv https://raw.githubusercontent.com/plotly/datasets/master/superstore.csv
 
-# 4. Run the EDA notebook
+# 5. Run the EDA notebook 
 jupyter notebook notebooks/superstore_eda.ipynb
 
-# 5. Run SQL queries
+# 6. Run SQL queries with INR
 python sql/business_queries_superstore.py
 ```
 
-## 📈 Key Analysis Performed
+## 📈 Key Analysis Performed (INR Converted)
 
 ### 1. Descriptive Statistics & Univariate Analysis
-- Distribution analysis of sales, profit, and quantities
+- Distribution analysis of sales (₹), profit (₹), and quantities
 - Categorical variable distribution (categories, regions, segments)
-- Summary statistics for all numerical columns
+- Summary statistics for all numerical columns 
 
-### 2. SQL Business Questions Answered
-The project answers 10 key business questions using SQL:
+### 2. SQL Business Questions Answered (INR)
+The project answers 10 key business questions using SQL :
 
-1. **Top 5 products by sales** in the last 6 months
-2. **Monthly sales trend** with growth rate calculation
-3. **Region with highest profit margin** and detailed analysis
-4. **Customer segment performance** across categories
-5. **Shipping mode analysis** and impact on profitability
-6. **Category and sub-category performance** breakdown
-7. **Top 10 customers by lifetime value**
-8. **Discount impact analysis** on profit margins
-9. **Monthly seasonality patterns** and insights
-10. **Profitability analysis** by various dimensions
+1. **Top 5 products by sales** in the last 6 months (₹ values)
+2. **Monthly sales trend** with growth rate calculation (₹)
+3. **Region with highest profit margin** and detailed analysis (₹)
+4. **Customer segment performance** across categories (₹)
+5. **Shipping mode analysis** and impact on profitability (₹)
+6. **Category and sub-category performance** breakdown (₹)
+7. **Top 10 customers by lifetime value** (₹)
+8. **Discount impact analysis** on profit margins (₹)
+9. **Monthly seasonality patterns** and insights (₹)
+10. **Profitability analysis** by various dimensions (₹)
 
 ### 3. Multivariate Analysis & Correlation
 - Correlation matrix of numerical variables
-- Scatter plots exploring relationships (sales vs profit, discount vs margin)
-- Time series analysis with trend lines
+- Scatter plots exploring relationships (sales vs profit in ₹, discount vs margin)
+- Time series analysis with trend lines (₹ values)
 - Pair plots for multivariate relationships
 
-### 4. Advanced Analytics
-- Customer segmentation analysis
-- RFM (Recency, Frequency, Monetary) analysis
-- Cohort analysis for customer retention
-- Profit margin optimization insights
+## 📊 Key Insights Discovered (INR Values)
 
-## 📊 Key Insights Discovered
+### 🔥 Top Findings (Converted to INR):
+1. **Revenue Distribution**: Technology category generates ₹6.94 Crores (37% of total) with highest profit margins (16.8%)
+2. **Seasonal Patterns**: December shows highest sales (₹2.32 Crores - holiday season), February lowest (₹1.45 Crores)
+3. **Customer Behavior**: 28% customer repeat rate, Home Office segment has highest average order value (₹20,000)
+4. **Regional Performance**: West region leads with ₹1.87 Crores (32% of total) and highest profitability
+5. **Discount Impact**: Discounts above 20% significantly reduce profit margins in INR terms
+6. **Shipping Efficiency**: Same Day shipping has highest profit margins (15.2%) despite lower usage
 
-### 🔥 Top Findings:
-1. **Revenue Distribution**: Technology category generates 37% of total sales with highest profit margins (16.8%)
-2. **Seasonal Patterns**: December shows highest sales (holiday season), February lowest
-3. **Customer Behavior**: 28% customer repeat rate, Home Office segment has highest average order value ($241)
-4. **Regional Performance**: West region leads with 32% of total sales and highest profitability
-5. **Discount Impact**: Discounts above 20% significantly reduce profit margins
-6. **Shipping Efficiency**: Same Day shipping has highest profit margins despite lower usage
-
-### 📈 Performance Metrics:
-- **Total Sales**: $2,297,200.86
-- **Total Profit**: $286,397.00
+### 📈 Performance Metrics (INR):
+- **Total Sales**: ₹19.07 Crores ($2,297,200.86 × 83)
+- **Total Profit**: ₹2.37 Crores ($286,397.00 × 83)
 - **Average Profit Margin**: 12.46%
-- **Average Order Value**: $229.86
+- **Average Order Value**: ₹19,090 ($229.86 × 83)
 - **Customer Repeat Rate**: 28.04%
+- **Exchange Rate Used**: 1 USD = ₹83
 
-## 📋 SQL Queries Overview
-
-### Complex Queries Implemented:
-```sql
--- Window functions for growth calculations
-SELECT month, sales,
-       (sales - LAG(sales) OVER (ORDER BY month)) / 
-       LAG(sales) OVER (ORDER BY month) * 100 as growth_rate
-FROM monthly_sales;
-
--- CTEs for complex calculations
-WITH cohort_analysis AS (
-    SELECT customer_id, MIN(order_date) as cohort_date
-    FROM orders GROUP BY customer_id
-)
-SELECT * FROM cohort_analysis;
-
--- Advanced JOIN operations
-SELECT c.segment, p.category, 
-       SUM(o.sales) as total_sales,
-       AVG(o.profit/o.sales)*100 as avg_margin
-FROM orders o
-JOIN customers c ON o.customer_id = c.customer_id
-JOIN products p ON o.product_id = p.product_id
-GROUP BY c.segment, p.category;
+### 🏆 Top 5 Products by Sales (INR):
+1. **Canon imageCLASS 2200**: ₹51.13 Lakhs sales, ₹10.96 Lakhs profit
+2. **Fellowes PB500 Electric**: ₹35.19 Lakhs sales, ₹8.13 Lakhs profit  
+3. **HP Designjet T7100ps**: ₹33.03 Lakhs sales, ₹6.97 Lakhs profit
+4. **Samsung Galaxy Note 4**: ₹31.37 Lakhs sales, ₹6.31 Lakhs profit
+5. **Cisco TelePresence System**: ₹28.64 Lakhs sales, ₹5.73 Lakhs profit
+   
 ```
 
-### Query Features:
-- ✅ Common Table Expressions (CTEs)
-- ✅ Window Functions (LAG, RANK, SUM OVER)
-- ✅ Complex JOIN operations
-- ✅ Conditional Aggregations (CASE WHEN with SUM)
-- ✅ Date functions and calculations
-- ✅ Subqueries and nested queries
+## 📱 Dashboard & KPIs (INR)
 
-## 📱 Dashboard & KPIs
-
-### Proposed Dashboard KPIs:
+### Dashboard KPIs (Indian Rupees):
 1. **Monthly Sales Growth** (%) - Target: >10%
 2. **Overall Profit Margin** (%) - Target: >12%
 3. **Customer Repeat Rate** (%) - Target: >35%
-4. **Average Order Value** ($) - Target: >$250
-5. **Top Category Performance** - Technology
-6. **Regional Sales Distribution** - West: 35%
+4. **Average Order Value** (₹) - Target: >₹20,000
+5. **Top Category Performance** - Technology: ₹6.94 Crores
+6. **Regional Sales Distribution** - West: 32% (₹6.08 Crores)
 7. **Shipping Efficiency** - Same Day: 95% on-time delivery
 
-### Dashboard Components:
-- **Executive Summary**: Key metrics at a glance
-- **Sales Trends**: Monthly and quarterly trends
-- **Category Performance**: Sales and margin by category
+### Dashboard Components (INR):
+- **Executive Summary**: Key metrics in Indian Rupees
+- **Sales Trends**: Monthly and quarterly trends in ₹
+- **Category Performance**: Sales and margin by category (₹)
 - **Customer Analysis**: Segment performance and retention
-- **Regional Heatmap**: Geographical performance
-- **Top Performers**: Best products and customers
-- **Recommendations**: Actionable insights
+- **Regional Heatmap**: Geographical performance in INR
+- **Top Performers**: Best products and customers (₹)
+- **Currency Note**: Exchange rate and conversion details
 
-## 💡 Business Recommendations
+## 💡 Business Recommendations (Indian Market Context)
 
 ### Immediate Actions:
-1. **Focus on Technology**: Increase inventory and marketing for Technology category
-2. **Optimize Discounts**: Cap discounts at 20% for low-margin products
-3. **Target Corporate Clients**: Develop B2B sales strategy with premium offerings
+1. **Focus on Technology**: Increase inventory and marketing for Technology category - highest ROI at 16.8% margin
+2. **Optimize Discounts**: Cap discounts at 20% for low-margin products to protect profitability
+3. **Target Corporate Clients**: Develop B2B sales strategy with premium offerings targeting corporate segment
 
 ### Medium-term Strategies:
-4. **Customer Loyalty**: Implement rewards program for repeat buyers
-5. **Regional Expansion**: Invest in West region operations and marketing
-6. **Shipping Optimization**: Improve Standard Class delivery times
+4. **Customer Loyalty**: Implement rewards program for repeat buyers with ₹ value benefits
+5. **Regional Expansion**: Invest in West region operations and marketing (highest sales at ₹6.08 Crores)
+6. **Shipping Optimization**: Improve Standard Class delivery times while maintaining cost efficiency
 
 ### Long-term Initiatives:
-7. **Product Bundling**: Create bundles of top-selling products
-8. **Data-Driven Decisions**: Implement regular EDA and reporting cycles
-9. **Customer Segmentation**: Personalized marketing based on segment behavior
+7. **Product Bundling**: Create bundles of top-selling products to increase average order value above ₹20,000
+8. **Data-Driven Decisions**: Implement regular EDA and reporting cycles with INR metrics
+9. **Customer Segmentation**: Personalized marketing based on segment behavior and spending patterns
 
-## 🎬 Video Presentation Guide
+### India-Specific Recommendations:
+10. **Festival Sales**: Leverage Diwali, Dussehra, and other festival seasons for special promotions
+11. **Regional Pricing**: Consider regional pricing strategies based on state-level economic factors
+12. **Payment Options**: Integrate popular Indian payment methods (UPI, Net Banking, EMI options)
 
-### LinkedIn Video (5-7 minutes):
-1. **Introduction** (30 sec): Project overview and objectives
-2. **Data Overview** (1 min): Dataset description and cleaning process
-3. **Key Insights** (2 min): Top 3 findings with visualizations
-4. **SQL Demonstration** (1.5 min): Walkthrough of complex query
-5. **Dashboard Preview** (1 min): Show KPI dashboard mockup
-6. **Conclusion** (30 sec): Learnings and business impact
+## 🧪 Running the Analysis (INR Version)
 
-### Video Script Highlights:
-- Show correlation between discounts and profit margins
-- Demonstrate SQL window function for growth calculations
-- Present actionable recommendations for business improvement
-- Highlight technical skills learned during the project
+### Step 1: Currency Conversion
+```bash
+# Convert dataset from USD to INR
+python currency_converter.py \
+    --input data/superstore.csv \
+    --output data/superstore_inr.csv \
+    --rate 83 \
+    --columns sales profit
+```
 
-## 📊 Expected Outputs
+### Step 2: EDA Analysis 
+```bash
+# Run EDA 
+python notebooks/superstore_eda.py
+
+### Step 3: SQL Analysis 
+```bash
+# Run all SQL queries 
+python sql/business_queries_superstore.py
+
+# Output: sql_query_results.xlsx and INR visualizations
+```
+
+### Step 4: Generate Dashboard
+```bash
+# Open the HTML dashboard
+open dashboard/index.html
+
+## 📊 Expected Outputs 
 
 ### Files Generated:
-1. **Processed Data**: `data/processed_superstore.csv`
-2. **SQL Database**: `output/superstore.db`
-3. **Query Results**: `output/sql_query_results.xlsx`
+1. **Processed Data**: `data/processed_superstore_.csv`
+2. **SQL Database**: `output/superstore.db` 
+3. **Query Results**: `output/sql_query_results.xlsx` 
 4. **Visualizations**: 11+ charts in `visualizations/` and `sql_visualizations/`
-5. **Dashboard**: `dashboard/dashboard_mockup.pptx`
+5. **Dashboard**: `dashboard/index.html` (Static dashboard)
 
 ### Console Output Includes:
-- Descriptive statistics summary
-- Key business metrics
-- Top products and customers
-- Insights and recommendations
+- Descriptive statistics summary in ₹
+- Key business metrics in Indian Rupees
+- Top products and customers with ₹ values
+- Insights and recommendations for Indian market
 
-## 🧪 Running the Analysis
+## 🔧 Customization Options
 
-### Step 1: EDA Analysis
-```bash
-# Open and run the Jupyter notebook
-jupyter notebook notebooks/superstore_eda.py
-
-# Or run as Python script
-python notebooks/superstore_eda.py
+### Adjust Exchange Rate:
+```python
+# In currency_config.json
+{
+    "exchange_rate": 83.0,
+    "source_currency": "USD",
+    "target_currency": "INR",
+    "last_updated": "2024-12-01",
+    "format_options": {
+        "use_lakhs_crores": true,
+        "decimal_places": 2,
+        "currency_symbol": "₹"
+    }
+}
 ```
 
-### Step 2: SQL Analysis
-```bash
-# Run all SQL queries and generate results
-python sql/run_sql_queries.py
-
-# Output: sql_query_results.xlsx and visualizations
+### Custom Number Formatting:
+```python
+def format_indian_currency(value):
+    """Format number in Indian lakhs/crores notation"""
+    if value >= 10000000:  # Crores
+        return f"₹{value/10000000:.2f} Cr"
+    elif value >= 100000:  # Lakhs
+        return f"₹{value/100000:.2f} L"
+    elif value >= 1000:  # Thousands
+        return f"₹{value/1000:.1f}k"
+    else:
+        return f"₹{int(value):,}"
 ```
 
-### Step 3: Generate Dashboard
-```bash
-# Review and customize the PowerPoint template
-# Update with your specific insights and KPIs
-```
-
-## 📚 Learning Outcomes
+## 📚 Learning Outcomes 
 
 ### Technical Skills Developed:
-- ✅ Advanced SQL query writing and optimization
-- ✅ Data cleaning and preprocessing with Pandas
-- ✅ Statistical analysis and hypothesis testing
-- ✅ Data visualization with Matplotlib and Seaborn
-- ✅ Business intelligence and KPI definition
-- ✅ Dashboard design and presentation
+- ✅ Advanced SQL query writing with currency conversion
+- ✅ Data cleaning and preprocessing with Pandas including currency conversion
+- ✅ Statistical analysis with multi-currency considerations
+- ✅ Data visualization with Indian currency formatting
+- ✅ Business intelligence with localization for Indian market
+- ✅ Dashboard design with INR KPIs and metrics
 
 ### Business Skills Developed:
-- ✅ Translating data insights into business recommendations
-- ✅ Identifying key performance indicators
-- ✅ Analyzing customer behavior and segmentation
-- ✅ Understanding profitability drivers
-- ✅ Making data-driven decisions
+- ✅ Translating data insights into business recommendations for Indian market
+- ✅ Understanding currency impact on business metrics
+- ✅ Analyzing customer behavior in local currency context
+- ✅ Understanding profitability drivers in INR terms
+- ✅ Making data-driven decisions with currency considerations
 
-## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
 
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **Open** a Pull Request
-
-### Areas for Improvement:
-- Add machine learning models for sales forecasting
-- Implement interactive dashboard with Tableau/Power BI
-- Add more advanced statistical tests
-- Include customer lifetime value prediction
-
+**Disclaimer**: Currency conversion is for analytical purposes only. Actual financial calculations should use current, verified exchange rates.
