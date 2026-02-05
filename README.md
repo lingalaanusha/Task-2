@@ -199,24 +199,12 @@ The project answers 10 key business questions using SQL :
 11. **Regional Pricing**: Consider regional pricing strategies based on state-level economic factors
 12. **Payment Options**: Integrate popular Indian payment methods (UPI, Net Banking, EMI options)
 
-## 🧪 Running the Analysis (INR Version)
-
-### Step 1: Currency Conversion
-```bash
-# Convert dataset from USD to INR
-python currency_converter.py \
-    --input data/superstore.csv \
-    --output data/superstore_inr.csv \
-    --rate 83 \
-    --columns sales profit
-```
-
-### Step 2: EDA Analysis 
+### Step 1: EDA Analysis 
 ```bash
 # Run EDA 
 python notebooks/superstore_eda.py
 
-### Step 3: SQL Analysis 
+### Step 2: SQL Analysis 
 ```bash
 # Run all SQL queries 
 python sql/business_queries_superstore.py
@@ -224,7 +212,7 @@ python sql/business_queries_superstore.py
 # Output: sql_query_results.xlsx and INR visualizations
 ```
 
-### Step 4: Generate Dashboard
+### Step 3: Generate Dashboard
 ```bash
 # Open the HTML dashboard
 open dashboard/index.html
